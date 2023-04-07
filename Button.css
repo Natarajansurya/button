@@ -1,3 +1,10 @@
+table, td{
+  border: 1px solid;
+  align-items: center;
+ text-align: center;
+ height: 150px;
+}
+
 .button-ripple {
     position: relative;
     background: linear-gradient(90deg, #755bea, #ff72c0);
@@ -194,7 +201,7 @@
     position: relative;
     width:140px;
     height:50px;
-    top:50%;
+    top:0%;
     background-color:#0a0a23;
     color:whitesmoke;
 }
@@ -206,7 +213,7 @@
 }
 .button9 {
     position: relative;
-    top:50%;
+    top:0%;
     background-color:#0a0a23;
     color: #fff;
     border:none; 
@@ -251,10 +258,11 @@
     font-size: large;
     padding: 4px 6px;
     color: #791d74 !important;
+    
   }
   
   .button12::after {
-    max-width: 5%;
+    max-width: 65px;
     height: 2px;
     display: block;
     content: "";
@@ -262,6 +270,7 @@
     opacity: 1;
     margin-bottom: -5px;
     margin-top: 1px;
+    margin-left: 108px;
   }
   
   .button12div {
@@ -415,4 +424,82 @@
 .button17:hover {
     color: #fff;
     font-size: 16px;
+}
+.button18 {
+  background-color: #0077CC;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.button18:hover {
+  background-color: #005B99;
+  cursor: pointer;
+  border-style: outset;
+  border-color: #00ffd5;
+}
+.button19 {
+  background-color:white;
+  color:  #0077CC;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.button19:hover {
+  
+  cursor: pointer;
+  border-style: inset;
+}
+.button20 {
+  background-color: #0077CC;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.button20:active {
+  background-color: #005B99;
+  box-shadow: 0px 0px 5px #333333;
+  transform: translateY(3px);
+  
+}
+.button21 {
+  position: relative;
+  overflow: hidden;
+  background-color: #ff4500;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.button21:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7%;
+  left: 4%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  transform: translate(-20%, -20%);
+  transition: all 0.6s ease;
+}
+
+.button21:hover:after {
+  width: 200px;
+  height: 200px;
+  
 }
